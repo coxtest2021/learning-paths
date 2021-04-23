@@ -22,9 +22,6 @@ public class AccountSteps {
             throws Throwable
     {
         helper.getMyAccount().credit(amount);
-
-        Assert.assertEquals("Incorrect account balance -",
-                amount, helper.getMyAccount().getBalance());
     }
 
     @Then("^the balance of my account should be (\\$\\d+\\.\\d+)$")
