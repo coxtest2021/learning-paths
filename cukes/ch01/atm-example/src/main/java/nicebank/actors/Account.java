@@ -14,4 +14,8 @@ public class Account {
     {
         return balance;
     }
+
+    public void debit(int dollars) {
+        balance = balance.minus(new Money(dollars, 0));
+    }
 }
