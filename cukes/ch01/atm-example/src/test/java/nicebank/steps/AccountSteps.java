@@ -17,7 +17,7 @@ public class AccountSteps {
         this.helper = helper;
     }
 
-    @Given("^I have deposited (\\$\\d+\\.\\d+) in my account$")
+    @Given("^my account has been credited with (\\$\\d+\\.\\d+)$")
     public void iHaveDeposited$InMyAccount(@Transform(MoneyConverter.class) Money amount)
             throws Throwable
     {
